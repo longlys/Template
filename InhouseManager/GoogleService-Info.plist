@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>351647008811-fn6kmcnse9vnltkoa818gfq5ufspncm8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.351647008811-fn6kmcnse9vnltkoa818gfq5ufspncm8</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>351647008811-qjbki8h34m9srl34mtk8p3eae2kk6tka.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBM52PT3XSAPzbyejIxbwBwLaUqam4nrok</string>
+	<key>GCM_SENDER_ID</key>
+	<string>351647008811</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.loha.InhouseManager</string>
+	<key>PROJECT_ID</key>
+	<string>loha-4dfa4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>loha-4dfa4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:351647008811:ios:ba624f146e7270cfe2c26e</string>
+</dict>
+</plist>
