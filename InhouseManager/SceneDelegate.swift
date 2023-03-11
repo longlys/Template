@@ -30,6 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let windown = UIApplication.shared.windows.first(where: { $0.isKeyWindow })
         let rootViewController = windown?.rootViewController
         if let rootViewController = rootViewController {
+            
             if rootViewController is IHSplashViewController {
                 return
             }

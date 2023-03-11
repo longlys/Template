@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,94 +11,67 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IHExampleViewController" customModule="InhouseManager" customModuleProvider="target">
             <connections>
-                <outlet property="bannerView" destination="vak-cH-XeY" id="hCD-IS-xYg"/>
-                <outlet property="lbText" destination="vak-cH-XeY" id="mIz-yW-xI4"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="buttonInterstitialAds" destination="GhZ-Lo-72h" id="rCq-IY-7wy"/>
+                <outlet property="buttonRewardedAd" destination="cUV-zc-r0p" id="zZQ-YX-fLi"/>
+                <outlet property="lblRewardAmount" destination="pfY-3O-Ts0" id="CJp-Cm-6lk"/>
+                <outlet property="view" destination="oyQ-2r-cjp" id="kd2-3R-V6x"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view contentMode="scaleToFill" id="oyQ-2r-cjp">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OML-GC-O3i">
-                    <rect key="frame" x="50" y="109" width="293" height="200"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGI-Ub-oe2">
-                            <rect key="frame" x="0.0" y="0.0" width="293" height="53.333333333333336"/>
-                            <color key="backgroundColor" red="1" green="0.3799999952" blue="0.31799998880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Show/Hiden Banner">
-                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </buttonConfiguration>
-                            <connections>
-                                <action selector="showhidenbanner:" destination="-1" eventType="touchUpInside" id="syi-X6-6Kd"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5z-Dp-jxx">
-                            <rect key="frame" x="0.0" y="73.333333333333343" width="293" height="53.333333333333343"/>
-                            <color key="backgroundColor" red="1" green="0.3799999952" blue="0.31799998880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Show/Hiden Intertisial">
-                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </buttonConfiguration>
-                            <connections>
-                                <action selector="showhidenintertisial:" destination="-1" eventType="touchUpInside" id="d7o-c7-n2h"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nI5-p1-Uxo">
-                            <rect key="frame" x="0.0" y="146.66666666666666" width="293" height="53.333333333333343"/>
-                            <color key="backgroundColor" red="1" green="0.3799999952" blue="0.31799998880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Show/Hiden OpenApp">
-                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </buttonConfiguration>
-                            <connections>
-                                <action selector="showhidenOpenApp:" destination="-1" eventType="touchUpInside" id="w09-KH-211"/>
-                            </connections>
-                        </button>
-                    </subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhZ-Lo-72h">
+                    <rect key="frame" x="0.0" y="401" width="393" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="wVX-S8-Sfq"/>
+                        <constraint firstAttribute="height" constant="50" id="n30-k3-eOc"/>
                     </constraints>
-                </stackView>
-                <view contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="bGx-dH-i2V" customClass="GAMBannerView">
-                    <rect key="frame" x="36.666666666666657" y="768" width="320" height="50"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </view>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nhE-3Y-sDl">
-                    <rect key="frame" x="10" y="349" width="373" height="20.333333333333314"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8O-4F-MWr">
-                            <rect key="frame" x="0.0" y="0.0" width="186.66666666666666" height="20.333333333333332"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vak-cH-XeY">
-                            <rect key="frame" x="186.66666666666663" y="0.0" width="186.33333333333337" height="20.333333333333332"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                </stackView>
+                    <state key="normal" title="Show Interstitial Ad"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUV-zc-r0p">
+                    <rect key="frame" x="0.0" y="466" width="393" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="nPf-ag-dn7"/>
+                    </constraints>
+                    <state key="normal" title="Show Rewarded Ad"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfY-3O-Ts0">
+                    <rect key="frame" x="187" y="203" width="19" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83N-Ab-RIo">
+                    <rect key="frame" x="126.66666666666669" y="159" width="140" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch Rewarded Ad to get more reward amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfn-8N-5M4">
+                    <rect key="frame" x="32" y="259" width="329" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <viewLayoutGuide key="safeArea" id="iNx-OR-aUL"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bGx-dH-i2V" secondAttribute="bottom" id="AkS-Hd-Kgh"/>
-                <constraint firstItem="nhE-3Y-sDl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="KSs-mX-2r7"/>
-                <constraint firstItem="OML-GC-O3i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="Ofm-wJ-6UD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OML-GC-O3i" secondAttribute="trailing" constant="50" id="Stj-VV-j1h"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nhE-3Y-sDl" secondAttribute="trailing" constant="10" id="b2y-h7-FQx"/>
-                <constraint firstItem="nhE-3Y-sDl" firstAttribute="top" secondItem="OML-GC-O3i" secondAttribute="bottom" constant="40" id="huJ-Rl-uYK"/>
-                <constraint firstItem="OML-GC-O3i" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="sCz-uh-F74"/>
-                <constraint firstItem="bGx-dH-i2V" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="twN-Rn-0cE"/>
+                <constraint firstItem="83N-Ab-RIo" firstAttribute="centerX" secondItem="oyQ-2r-cjp" secondAttribute="centerX" id="0nB-GA-Tsn"/>
+                <constraint firstItem="GhZ-Lo-72h" firstAttribute="leading" secondItem="iNx-OR-aUL" secondAttribute="leading" id="47d-2A-jFF"/>
+                <constraint firstItem="cUV-zc-r0p" firstAttribute="trailing" secondItem="GhZ-Lo-72h" secondAttribute="trailing" id="JZV-dP-P2d"/>
+                <constraint firstItem="83N-Ab-RIo" firstAttribute="top" secondItem="iNx-OR-aUL" secondAttribute="top" constant="100" id="LAb-GY-X4R"/>
+                <constraint firstItem="cUV-zc-r0p" firstAttribute="leading" secondItem="GhZ-Lo-72h" secondAttribute="leading" id="R7b-5p-tQc"/>
+                <constraint firstItem="pfY-3O-Ts0" firstAttribute="top" secondItem="83N-Ab-RIo" secondAttribute="bottom" constant="20" id="SI2-8R-gio"/>
+                <constraint firstItem="xfn-8N-5M4" firstAttribute="top" secondItem="pfY-3O-Ts0" secondAttribute="bottom" constant="20" id="SMe-tM-RHO"/>
+                <constraint firstItem="iNx-OR-aUL" firstAttribute="trailing" secondItem="GhZ-Lo-72h" secondAttribute="trailing" id="Sug-GI-82D"/>
+                <constraint firstItem="xfn-8N-5M4" firstAttribute="centerX" secondItem="oyQ-2r-cjp" secondAttribute="centerX" id="eQt-np-hCA"/>
+                <constraint firstItem="GhZ-Lo-72h" firstAttribute="centerY" secondItem="oyQ-2r-cjp" secondAttribute="centerY" id="lGv-cV-7qR"/>
+                <constraint firstItem="cUV-zc-r0p" firstAttribute="top" secondItem="GhZ-Lo-72h" secondAttribute="bottom" constant="15" id="oNs-bz-Kvg"/>
+                <constraint firstItem="pfY-3O-Ts0" firstAttribute="centerX" secondItem="oyQ-2r-cjp" secondAttribute="centerX" id="uNa-Dd-g8U"/>
             </constraints>
-            <point key="canvasLocation" x="109.16030534351144" y="20.422535211267608"/>
+            <point key="canvasLocation" x="-166" y="-626"/>
         </view>
     </objects>
     <resources>

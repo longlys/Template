@@ -4,9 +4,8 @@
 //
 //  Created by LongLy on 15/02/2023.
 //
-
+//
 import GoogleMobileAds
-import FirebaseRemoteConfig
 
 protocol AppOpenAdManagerDelegate: AnyObject {
     /// Method to be invoked when an app open ad is complete (i.e. dismissed or fails to show).
@@ -21,14 +20,6 @@ class AppOpenAdManager: NSObject {
     var isShowingAd = false
     var loadTime: Date?
     static let shared = AppOpenAdManager()
-
-    private var remoteConfig: RemoteConfig = {
-        let r = RemoteConfig.remoteConfig()
-        let settings = RemoteConfigSettings()
-        settings.minimumFetchInterval = 0
-        r.configSettings = settings
-        return r
-    }()
 
     var theAd: GADAppOpenAd? = nil
     var loadingId: Double = 0

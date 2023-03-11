@@ -7,19 +7,21 @@
 
 import UIKit
 import GoogleMobileAds
-import FirebaseCore
-import FirebaseFirestore
-import FirebaseAuth
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
-        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [ GADSimulatorID ]
+        // Use Firebase library to configure APIs.
         FirebaseApp.configure()
-        AdmobManager.shared.preloadRemoteConfig()
+        // RemoteConfigManager
+        RemoteConfigManager.shared
+        AdmobManager.shared.loadAllAdsWhenStart()
+        // Initialize the Google Mobile Ads SDK.
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+
         return true
     }
 

@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>351647008811-fn6kmcnse9vnltkoa818gfq5ufspncm8.apps.googleusercontent.com</string>
+	<string>955508344514-ndddcn2th2ass0q0vmhqu4rht8m324pb.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.351647008811-fn6kmcnse9vnltkoa818gfq5ufspncm8</string>
-	<key>ANDROID_CLIENT_ID</key>
-	<string>351647008811-qjbki8h34m9srl34mtk8p3eae2kk6tka.apps.googleusercontent.com</string>
+	<string>com.googleusercontent.apps.955508344514-ndddcn2th2ass0q0vmhqu4rht8m324pb</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBM52PT3XSAPzbyejIxbwBwLaUqam4nrok</string>
+	<string>AIzaSyAuoRfYTj1EmKidJmHe0fUdBF6uGlBmc2U</string>
 	<key>GCM_SENDER_ID</key>
-	<string>351647008811</string>
+	<string>955508344514</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.loha.InhouseManager</string>
+	<string>com.lacanh.InhouseManager</string>
 	<key>PROJECT_ID</key>
-	<string>loha-4dfa4</string>
+	<string>jplt-6e6aa</string>
 	<key>STORAGE_BUCKET</key>
-	<string>loha-4dfa4.appspot.com</string>
+	<string>jplt-6e6aa.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:351647008811:ios:ba624f146e7270cfe2c26e</string>
+	<string>1:955508344514:ios:a1656a5727b6a84ddf5d5b</string>
+	<key>DATABASE_URL</key>
+	<string>https://jplt-6e6aa.firebaseio.com</string>
 </dict>
 </plist>
